@@ -33,7 +33,7 @@ class Skills extends React.Component{
                     </div>
                     <div className="set">
                         <div className="item">
-                            <Card name="Python" states="授業でいっぱい使ったわボケ" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                            <Card name="Python" states="授業でいっぱい使ったわボケ" image="https://www.bizlearn.jp/wp/wp-content/uploads/2017/10/Python.png"/>
                         </div>
                         <div className="item">
                             <Card name="React" states="このサイトもReactで作ってます" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
@@ -52,7 +52,7 @@ class Skills extends React.Component{
                         <Card name="React Native" states="インターンで使ってまーす" image="https://kokensha.xyz/wp-content/uploads/2018/02/react-native.png"/>
                     </div>
                     <div className="item2">
-                        <Card name="Python" states="授業でいっぱい使ったわボケ" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                        <Card name="Python" states="授業でいっぱい使ったわボケ" image="https://www.bizlearn.jp/wp/wp-content/uploads/2017/10/Python.png"/>
                     </div>
                     <div className="item2">
                         <Card name="React" states="このサイトもReactで作ってます" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>

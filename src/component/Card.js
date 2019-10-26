@@ -8,14 +8,14 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     card: {
-        maxWidth: 345,
+        maxWidth: 545,
     },
     media: {
         height: 140,
     },
 });
 
-export default function MediaCard() {
+export default function MediaCard(props) {
     const classes = useStyles();
 
     return (
@@ -23,15 +23,15 @@ export default function MediaCard() {
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    src="../image/rails.png"
+                    image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"
                     title="Contemplative Reptile"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Rails(Ruby)
+                        {props.name}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        Ruby使えま〜す
+                        {props.states}
                     </Typography>
                 </CardContent>
             </CardActionArea>

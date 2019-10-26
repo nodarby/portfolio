@@ -3,6 +3,8 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import {withRouter} from "react-router";
+import HomeIcon from '@material-ui/icons/Home';
+import './Tab.css'
 
 const styles = {
     headline: {
@@ -40,6 +42,8 @@ class TabsEx extends React.Component{
                 <Grid item>
                     <ButtonGroup
                         fullWidth aria-label="full width outlined button group"
+                        className="bar"
+
                     >
                         <Button onClick={this.handleToHomePage}>HOME</Button>
                         <Button onClick={this.handleToProfilePage}>PROFILE</Button>

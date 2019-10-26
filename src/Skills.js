@@ -41,7 +41,7 @@ class Skills extends React.Component{
                     </div>
                 </div>
             );
-        }else{
+        }else if(this.state.width >= 400){
             return (
                 <div className="App">
                     <h2 className="main">Skill</h2>
@@ -55,6 +55,24 @@ class Skills extends React.Component{
                         <Card name="Python" states="授業でいっぱい使ったわボケ" image="https://www.bizlearn.jp/wp/wp-content/uploads/2017/10/Python.png"/>
                     </div>
                     <div className="item2">
+                        <Card name="React" states="このサイトもReactで作ってます" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                    </div>
+                </div>
+            );
+        }else{
+            return (
+                <div className="App">
+                    <h2 className="main">Skill</h2>
+                    <div className="item3">
+                        <Card name="Rails(Ruby)" states="Rails使えま〜す" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                    </div>
+                    <div className="item3">
+                        <Card name="React Native" states="インターンで使ってまーす" image="https://kokensha.xyz/wp-content/uploads/2018/02/react-native.png"/>
+                    </div>
+                    <div className="item3">
+                        <Card name="Python" states="授業でいっぱい使ったわボケ" image="https://www.bizlearn.jp/wp/wp-content/uploads/2017/10/Python.png"/>
+                    </div>
+                    <div className="item3">
                         <Card name="React" states="このサイトもReactで作ってます" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
                     </div>
                 </div>

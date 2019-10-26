@@ -6,6 +6,7 @@ import {withRouter} from "react-router";
 import {MuiThemeProvider,createMuiTheme } from '@material-ui/core/styles';
 import './Tab.css'
 
+
 const styles = {
     headline: {
         fontSize: 24,
@@ -15,8 +16,12 @@ const styles = {
     },
 };
 
-const theme = createMuiTheme({
+
+var theme = createMuiTheme({
     typography: {
+        fontSize:[
+            18,
+        ].join(','),
         fontFamily: [
             'Arvo',
             'sans-serif',
@@ -26,8 +31,20 @@ const theme = createMuiTheme({
 
 
 
-
 class TabsEx extends React.Component{
+
+
+
+    state={
+        width:window.innerWidth
+    }
+
+
+    componentDidMount() {
+        window.addEventListener('resize', () => {
+            this.setState({width:window.innerWidth})
+        })
+    }
 
     handleToHomePage = () => {
         this.props.history.push('/')
@@ -46,6 +63,31 @@ class TabsEx extends React.Component{
     }
 
     render(){
+        if(this.state.width >= 600){
+            theme = createMuiTheme({
+                typography: {
+                    fontSize:[
+                        18,
+                    ].join(','),
+                    fontFamily: [
+                        'Arvo',
+                        'sans-serif',
+                    ].join(','),
+                },
+            })
+        }else if(this.state.width >= 350){
+            theme = createMuiTheme({
+                typography: {
+                    fontSize:[
+                        13,
+                    ].join(','),
+                    fontFamily: [
+                        'Arvo',
+                        'sans-serif',
+                    ].join(','),
+                },
+            })
+        }
         return(
             <MuiThemeProvider theme={theme}>
                 <div className='tab'>

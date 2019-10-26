@@ -4,6 +4,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import './index.css';
 import Home from './Home'
 import Profile from './Profile'
+import Skills from './Skills'
 import * as serviceWorker from './serviceWorker';
 import TabsEx from "./Tab";
 
@@ -11,8 +12,9 @@ ReactDOM.render(
     <BrowserRouter>
         <TabsEx />
         <Route exact path={'/'} component={Home}/>
-        <Route path={'/about'}  component={Profile}/>
-        <Route path={'/work'} component={Home}/>
+        <Route path={'/profile'}  component={Profile}/>
+        <Route path={'/skills'} component={Skills}/>
+        <Route path={'/works'} component={Skills}/>
         <Route path={'/contact'} component={Home}/>
     </BrowserRouter>
     , document.getElementById('root'));

@@ -1,6 +1,5 @@
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
-import Home from './Home'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 const styles = {
@@ -27,7 +26,6 @@ const TabsEx = () => (
             <Tab
                 label="HOME"
             >
-                <Home/>
             </Tab>
 
             <Tab

@@ -13,7 +13,7 @@ ReactDOM.render(
         <TabsEx />
         <Route exact path={'/'} component={Home}/>
         <Route path={'/profile'}  component={Profile}/>
-        <Route path={'/skills'} component={Skills}/>
+        <Route path={'/skill'} component={Skills}/>
         <Route path={'/works'} component={Skills}/>
         <Route path={'/contact'} component={Home}/>
     </BrowserRouter>

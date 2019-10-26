@@ -1,6 +1,8 @@
 import React from 'react';
-import {Tabs, Tab} from 'material-ui/Tabs';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
+import {withRouter} from "react-router";
 
 const styles = {
     headline: {
@@ -13,37 +15,43 @@ const styles = {
 
 
 
-function handleActive(tab) {
-    alert(`A tab with this route property ${tab.props['data-route']} was activated.`);
+
+class TabsEx extends React.Component{
+
+    handleToHomePage = () => {
+        this.props.history.push('/')
+    }
+    handleToProfilePage = () => {
+        this.props.history.push('/profile')
+    }
+    handleToSkillPage = () => {
+        this.props.history.push('/skill')
+    }
+    handleToWorksPage = () => {
+        this.props.history.push('/works')
+    }
+    handleToContactPage = () => {
+        this.props.history.push('/contact')
+    }
+
+    render(){
+        return(
+            <div className='tab'>
+                <Grid item>
+                    <ButtonGroup
+                        fullWidth aria-label="full width outlined button group"
+                    >
+                        <Button onClick={this.handleToHomePage}>HOME</Button>
+                        <Button onClick={this.handleToProfilePage}>PROFILE</Button>
+                        <Button　onClick={this.handleToSkillPage}>SKILL</Button>
+                        <Button onClick={this.handleToWorksPage}>WORKS</Button>
+                        <Button onClick={this.handleToContactPage}>CONTACT</Button>
+                    </ButtonGroup>
+                </Grid>
+            </div>
+        )
+    }
 }
 
 
-
-const TabsEx = () => (
-
-    <MuiThemeProvider>
-        <Tabs>
-            <Tab
-                label="HOME"
-            >
-            </Tab>
-
-            <Tab
-                label="Profile"
-            >
-            </Tab>
-            <Tab
-                label="Skills"
-                data-route="/home"
-                onActive={handleActive}
-            >
-            </Tab>
-            <Tab label="Works" >
-            </Tab>
-            <Tab label=" Contact" >
-            </Tab>
-        </Tabs>
-    </MuiThemeProvider>
-);
-
-export default TabsEx;
+export default withRouter(TabsEx);

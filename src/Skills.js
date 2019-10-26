@@ -1,6 +1,6 @@
 import React from 'react';
-import './Profile.css';
-//import Card from './component/card'
+import './Common.css';
+
 
 
 

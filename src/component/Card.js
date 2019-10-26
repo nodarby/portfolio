@@ -6,24 +6,30 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
+
 const useStyles = makeStyles({
     card: {
-        maxWidth: 545,
+        maxWidth: 350,
+        minWidth: 350,
     },
     media: {
-        height: 140,
+        height: 200,
     },
 });
 
-export default function MediaCard(props) {
+
+
+export default function MediaCard(props){
     const classes = useStyles();
+
+
 
     return (
         <Card className={classes.card}>
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"
+                    image={props.image}
                     title="Contemplative Reptile"
                 />
                 <CardContent>

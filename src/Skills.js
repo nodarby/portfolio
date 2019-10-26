@@ -4,28 +4,64 @@ import './Skills.css'
 import Card from './component/Card'
 
 
-function Skills() {
-    return (
-        <div className="App">
-            <h2 className="main">Skill</h2>
-            <div className="set">
-                <div className="item">
-                    <Card name="Rails(Ruby)" states="Rails使えま〜す"/>
+
+class Skills extends React.Component{
+
+    state={
+        width:window.innerWidth
+    }
+
+
+    componentDidMount() {
+        window.addEventListener('resize', () => {
+            this.setState({width:window.innerWidth})
+        })
+    }
+
+    render(){
+        if(this.state.width >= 850){
+            return (
+                <div className="App">
+                    <h2 className="main">Skill</h2>
+                    <div className="set">
+                        <div className="item">
+                            <Card name="Rails(Ruby)" states="Rails使えま〜す" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                        </div>
+                        <div className="item">
+                            <Card name="React Native" states="インターンで使ってまーす" image="https://kokensha.xyz/wp-content/uploads/2018/02/react-native.png"/>
+                        </div>
+                    </div>
+                    <div className="set">
+                        <div className="item">
+                            <Card name="Python" states="授業でいっぱい使ったわボケ" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                        </div>
+                        <div className="item">
+                            <Card name="React" states="このサイトもReactで作ってます" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                        </div>
+                    </div>
                 </div>
-                <div className="item">
-                    <Card name="React Native" states="インターンで使ってまーす"/>
+            );
+        }else{
+            return (
+                <div className="App">
+                    <h2 className="main">Skill</h2>
+                    <div className="item2">
+                        <Card name="Rails(Ruby)" states="Rails使えま〜す" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                    </div>
+                    <div className="item2">
+                        <Card name="React Native" states="インターンで使ってまーす" image="https://kokensha.xyz/wp-content/uploads/2018/02/react-native.png"/>
+                    </div>
+                    <div className="item2">
+                        <Card name="Python" states="授業でいっぱい使ったわボケ" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                    </div>
+                    <div className="item2">
+                        <Card name="React" states="このサイトもReactで作ってます" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                    </div>
                 </div>
-            </div>
-            <div className="set">
-                <div className="item">
-                    <Card name="Python" states="授業でいっぱい使ったわボケ"/>
-                </div>
-                <div className="item">
-                    <Card name="React" states="このサイトもReactで作ってます"/>
-                </div>
-            </div>
-        </div>
-    );
+            );
+        }
+    }
+
 }
 
 export default Skills;

@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import {withRouter} from "react-router";
+import {MuiThemeProvider,createMuiTheme } from '@material-ui/core/styles';
 import './Tab.css'
 
 const styles = {
@@ -13,6 +14,15 @@ const styles = {
         fontWeight: 400,
     },
 };
+
+const theme = createMuiTheme({
+    typography: {
+        fontFamily: [
+            'Arvo',
+            'sans-serif',
+        ].join(','),
+    },
+})
 
 
 
@@ -37,21 +47,24 @@ class TabsEx extends React.Component{
 
     render(){
         return(
-            <div className='tab'>
-                <Grid item>
-                    <ButtonGroup
-                        fullWidth aria-label="full width outlined button group"
-                        className="bar"
+            <MuiThemeProvider theme={theme}>
+                <div className='tab'>
+                    <Grid item>
+                        <ButtonGroup
+                            fullWidth aria-label="full width outlined button group"
+                            className="bar"
 
-                    >
-                        <Button onClick={this.handleToHomePage}>HOME</Button>
-                        <Button onClick={this.handleToProfilePage}>PROFILE</Button>
-                        <Button　onClick={this.handleToSkillPage}>SKILL</Button>
-                        <Button onClick={this.handleToWorksPage}>WORKS</Button>
-                        <Button onClick={this.handleToContactPage}>CONTACT</Button>
-                    </ButtonGroup>
-                </Grid>
-            </div>
+                        >
+                            <Button onClick={this.handleToHomePage} className="button">HOME</Button>
+                            <Button onClick={this.handleToProfilePage}>PROFILE</Button>
+                            <Button　onClick={this.handleToSkillPage}>SKILL</Button>
+                            <Button onClick={this.handleToWorksPage}>WORKS</Button>
+                            <Button onClick={this.handleToContactPage}>CONTACT</Button>
+                        </ButtonGroup>
+                    </Grid>
+                </div>
+            </MuiThemeProvider>
+
         )
     }
 }

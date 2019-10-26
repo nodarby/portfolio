@@ -9,8 +9,7 @@ import './Common.css';
 function Home() {
     return (
         <div className="App">
-            <h5>Hello</h5>
-            <Link className="navbar__link" to="/about">about</Link>
+            <h5>ようこそ</h5>
         </div>
     );
 }

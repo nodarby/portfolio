@@ -1,0 +1,23 @@
+.item{
+    width: 700px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.item2{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item3{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}

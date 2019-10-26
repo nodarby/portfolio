@@ -5,6 +5,8 @@ import './index.css';
 import Home from './Home'
 import Profile from './Profile'
 import Skills from './Skills'
+import Works from './Works'
+import Component from './Contact'
 import * as serviceWorker from './serviceWorker';
 import TabsEx from "./Tab";
 
@@ -14,8 +16,8 @@ ReactDOM.render(
         <Route exact path={'/'} component={Home}/>
         <Route path={'/profile'}  component={Profile}/>
         <Route path={'/skill'} component={Skills}/>
-        <Route path={'/works'} component={Skills}/>
-        <Route path={'/contact'} component={Home}/>
+        <Route path={'/works'} component={Works}/>
+        <Route path={'/contact'} component={Component}/>
     </BrowserRouter>
     , document.getElementById('root'));
 

@@ -8,7 +8,7 @@ import './Common.css';
 function Home() {
     return (
         <div className="App">
-            <h5>ようこそ</h5>
+            <h1 className="big">Welcome</h1>
         </div>
     );
 }

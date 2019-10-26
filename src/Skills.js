@@ -25,18 +25,18 @@ class Skills extends React.Component{
                     <h2 className="main">Skill</h2>
                     <div className="set">
                         <div className="item">
-                            <Card name="Rails(Ruby)" states="Rails使えま〜す" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                            <Card name="Rails(Ruby)" states="Rails使えま〜す" image="/static/images/rails_logo.png"/>
                         </div>
                         <div className="item">
-                            <Card name="React Native" states="インターンで使ってまーす" image="https://kokensha.xyz/wp-content/uploads/2018/02/react-native.png"/>
+                            <Card name="React Native" states="インターンで使ってまーす" image="/static/images/react-native.png"/>
                         </div>
                     </div>
                     <div className="set">
                         <div className="item">
-                            <Card name="Python" states="授業でいっぱい使ったわボケ" image="https://www.bizlearn.jp/wp/wp-content/uploads/2017/10/Python.png"/>
+                            <Card name="Python" states="授業でいっぱい使ったわボケ" image="/static/images/Python.png"/>
                         </div>
                         <div className="item">
-                            <Card name="React" states="このサイトもReactで作ってます" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                            <Card name="React" states="このサイトもReactで作ってます" image="/static/images/logo-og.png"/>
                         </div>
                     </div>
                 </div>
@@ -46,16 +46,16 @@ class Skills extends React.Component{
                 <div className="App">
                     <h2 className="main">Skill</h2>
                     <div className="item2">
-                        <Card name="Rails(Ruby)" states="Rails使えま〜す" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                        <Card name="Rails(Ruby)" states="Rails使えま〜す" image="h/static/images/rails_logo.png"/>
                     </div>
                     <div className="item2">
-                        <Card name="React Native" states="インターンで使ってまーす" image="https://kokensha.xyz/wp-content/uploads/2018/02/react-native.png"/>
+                        <Card name="React Native" states="インターンで使ってまーす" image="/static/images/react-native.png"/>
                     </div>
                     <div className="item2">
-                        <Card name="Python" states="授業でいっぱい使ったわボケ" image="https://www.bizlearn.jp/wp/wp-content/uploads/2017/10/Python.png"/>
+                        <Card name="Python" states="授業でいっぱい使ったわボケ" image="/static/images/Python.png"/>
                     </div>
                     <div className="item2">
-                        <Card name="React" states="このサイトもReactで作ってます" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                        <Card name="React" states="このサイトもReactで作ってます" image="/static/images/logo-og.png"/>
                     </div>
                 </div>
             );
@@ -64,16 +64,16 @@ class Skills extends React.Component{
                 <div className="App">
                     <h2 className="main">Skill</h2>
                     <div className="item3">
-                        <Card name="Rails(Ruby)" states="Rails使えま〜す" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                        <Card name="Rails(Ruby)" states="Rails使えま〜す" image="/static/images/rails_logo.png"/>
                     </div>
                     <div className="item3">
-                        <Card name="React Native" states="インターンで使ってまーす" image="https://kokensha.xyz/wp-content/uploads/2018/02/react-native.png"/>
+                        <Card name="React Native" states="インターンで使ってまーす" image="/static/images/react-native.png"/>
                     </div>
                     <div className="item3">
-                        <Card name="Python" states="授業でいっぱい使ったわボケ" image="https://www.bizlearn.jp/wp/wp-content/uploads/2017/10/Python.png"/>
+                        <Card name="Python" states="授業でいっぱい使ったわボケ" image="/static/images/Python.png"/>
                     </div>
                     <div className="item3">
-                        <Card name="React" states="このサイトもReactで作ってます" image="https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png"/>
+                        <Card name="React" states="このサイトもReactで作ってます" image="/static/images/logo-og.png"/>
                     </div>
                 </div>
             );

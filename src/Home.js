@@ -1,16 +1,25 @@
 import React from 'react';
 import './Common.css';
+import {Fade} from "@material-ui/core";
 
 
+class Home extends React.Component{
+    state={
+        visible:window.home,
+    }
 
 
+    render(){
+        return (
+            <Fade in={this.state.visible} timeout={3000}>
+                <div className="App">
+                    <h1 className="big">Welcome</h1>
+                </div>
+            </Fade>
+        );
+    }
 
-function Home() {
-    return (
-        <div className="App">
-            <h1 className="big">Welcome</h1>
-        </div>
-    );
+
 }
 
 export default Home;

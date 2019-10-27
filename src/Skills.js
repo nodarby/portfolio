@@ -2,6 +2,7 @@ import React from 'react';
 import './Common.css';
 import './Skills.css'
 import Card from './component/Card'
+import {Fade} from "@material-ui/core";
 
 
 const rails={
@@ -33,6 +34,7 @@ const react = {
 class Skills extends React.Component{
 
     state = {
+        visible:window.skill,
         width:500
     }
 
@@ -49,6 +51,7 @@ class Skills extends React.Component{
     render(){
         if(this.state.width >= 850){
             return (
+                <Fade in={this.state.visible} timeout={3000}>
                 <div className="App">
                     <h2 className="main">Skill</h2>
                     <div className="set">
@@ -68,9 +71,11 @@ class Skills extends React.Component{
                         </div>
                     </div>
                 </div>
+                </Fade>
             );
         }else if(this.state.width >= 400){
             return (
+                <Fade in={this.state.visible}  timeout={3000}>
                 <div className="App">
                     <h2 className="main">Skill</h2>
                     <div className="item2">
@@ -86,9 +91,11 @@ class Skills extends React.Component{
                         <Card name={react.name} states={react.states} image={react.image}/>
                     </div>
                 </div>
+                </Fade>
             );
         }else{
             return (
+                <Fade in={this.state.visible}  timeout={3000}>
                 <div className="App">
                     <h2 className="main">Skill</h2>
                     <div className="item3">
@@ -104,6 +111,7 @@ class Skills extends React.Component{
                         <Card name={react.name} states={react.states} image={react.image}/>
                     </div>
                 </div>
+                </Fade>
             );
         }
     }

@@ -52,6 +52,7 @@ h4{
 
 .eng_line{
     text-decoration: underline;
+    font-weight: bold;
     display:inline;
     color: white;
 }
@@ -70,3 +71,5 @@ h4{
 .wrap{
     padding-bottom: 30px;
 }
+
+

@@ -45,18 +45,48 @@ class TabsEx extends React.Component{
     }
 
     handleToHomePage = () => {
+        window.home=true
+        window.profile=false
+        window.skill=false
+        window.works=false
+        window.contact=false
+
         this.props.history.push('/')
     }
     handleToProfilePage = () => {
+        window.home=false
+        window.profile=true
+        window.skill=false
+        window.works=false
+        window.contact=false
+
         this.props.history.push('/profile')
     }
     handleToSkillPage = () => {
+        window.home=false
+        window.profile=false
+        window.skill=true
+        window.works=false
+        window.contact=false
+
         this.props.history.push('/skill')
     }
     handleToWorksPage = () => {
+        window.home=false
+        window.profile=false
+        window.skill=false
+        window.works=true
+        window.contact=false
+
         this.props.history.push('/works')
     }
     handleToContactPage = () => {
+        window.home=false
+        window.profile=false
+        window.skill=false
+        window.works=false
+        window.contact=true
+
         this.props.history.push('/contact')
     }
 

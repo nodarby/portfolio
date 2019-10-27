@@ -4,6 +4,31 @@ import './Skills.css'
 import Card from './component/Card'
 
 
+const rails={
+    name:"Rails(Ruby)",
+    states:"サーバサイド言語として、teamLabサマーインターン2019で使用。",
+    image:"/static/images/rails_logo.png"
+}
+
+const rn ={
+    name:"React Native",
+    states:"スペース２４コミニュケーションズのITインターン生としてアプリを作成中",
+    image:"/static/images/react-native.png"
+}
+
+const py = {
+    name:"Python",
+    states:"1年次より講義内で数値解析や機械学習等に利用。",
+    image:"/static/images/Python.png"
+}
+
+const react = {
+    name:"React",
+    states:"React Nativeでの経験を元に運用を開始。このポートフォリオサイトもReactを用いた。",
+    image:"/static/images/logo-og.png"
+}
+
+
 
 class Skills extends React.Component{
 
@@ -13,10 +38,13 @@ class Skills extends React.Component{
 
 
     componentDidMount() {
+        this.setState({width:window.innerWidth})
         window.addEventListener('resize', () => {
             this.setState({width:window.innerWidth})
         })
     }
+
+
 
     render(){
         if(this.state.width >= 850){
@@ -25,18 +53,18 @@ class Skills extends React.Component{
                     <h2 className="main">Skill</h2>
                     <div className="set">
                         <div className="item">
-                            <Card name="Rails(Ruby)" states="Rails使えま〜す" image="/static/images/rails_logo.png"/>
+                            <Card name={rails.name} states={rails.states} image={rails.image}/>
                         </div>
                         <div className="item">
-                            <Card name="React Native" states="インターンで使ってまーす" image="/static/images/react-native.png"/>
+                            <Card name={rn.name} states={rn.states} image={rn.image}/>
                         </div>
                     </div>
                     <div className="set">
                         <div className="item">
-                            <Card name="Python" states="授業でいっぱい使ったわボケ" image="/static/images/Python.png"/>
+                            <Card name={py.name} states={py.states} image={py.image}/>
                         </div>
                         <div className="item">
-                            <Card name="React" states="このサイトもReactで作ってます" image="/static/images/logo-og.png"/>
+                            <Card name={react.name} states={react.states} image={react.image}/>
                         </div>
                     </div>
                 </div>
@@ -46,16 +74,16 @@ class Skills extends React.Component{
                 <div className="App">
                     <h2 className="main">Skill</h2>
                     <div className="item2">
-                        <Card name="Rails(Ruby)" states="Rails使えま〜す" image="/static/images/rails_logo.png"/>
+                        <Card name={rails.name} states={rails.states} image={rails.image}/>
                     </div>
                     <div className="item2">
-                        <Card name="React Native" states="インターンで使ってまーす" image="/static/images/react-native.png"/>
+                        <Card name={rn.name} states={rn.states} image={rn.image}/>
                     </div>
                     <div className="item2">
-                        <Card name="Python" states="授業でいっぱい使ったわボケ" image="/static/images/Python.png"/>
+                        <Card name={py.name} states={py.states} image={py.image}/>
                     </div>
                     <div className="item2">
-                        <Card name="React" states="このサイトもReactで作ってます" image="/static/images/logo-og.png"/>
+                        <Card name={react.name} states={react.states} image={react.image}/>
                     </div>
                 </div>
             );
@@ -64,16 +92,16 @@ class Skills extends React.Component{
                 <div className="App">
                     <h2 className="main">Skill</h2>
                     <div className="item3">
-                        <Card name="Rails(Ruby)" states="Rails使えま〜す" image="/static/images/rails_logo.png"/>
+                        <Card name={rails.name} states={rails.states} image={rails.image}/>
                     </div>
                     <div className="item3">
-                        <Card name="React Native" states="インターンで使ってまーす" image="/static/images/react-native.png"/>
+                        <Card name={rn.name} states={rn.states} image={rn.image}/>
                     </div>
                     <div className="item3">
-                        <Card name="Python" states="授業でいっぱい使ったわボケ" image="/static/images/Python.png"/>
+                        <Card name={py.name} states={py.states} image={py.image}/>
                     </div>
                     <div className="item3">
-                        <Card name="React" states="このサイトもReactで作ってます" image="/static/images/logo-og.png"/>
+                        <Card name={react.name} states={react.states} image={react.image}/>
                     </div>
                 </div>
             );

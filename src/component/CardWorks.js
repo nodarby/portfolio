@@ -24,7 +24,10 @@ export default function MediaCard(props){
 
     return (
         <Card className={classes.card}>
-            <CardActionArea>
+            <CardActionArea
+                action={console.log("Hello")}
+            >
+
                 <CardMedia
                     className={classes.media}
                     image={props.image}

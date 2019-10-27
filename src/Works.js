@@ -13,6 +13,7 @@ class Works extends React.Component{
 
 
     componentDidMount() {
+        this.setState({width:window.innerWidth})
         window.addEventListener('resize', () => {
             this.setState({width:window.innerWidth})
         })
@@ -24,7 +25,7 @@ class Works extends React.Component{
                 <div className="App">
                     <h2 className="main">Works</h2>
                     <div className="item">
-                        <Card name="一夜人狼"　states="著作権には引っかからない" image='/static/images/oojinro.png'/>
+                        <Card name="一夜人狼"　states="著作権には引っかからない" image='/static/images/oojinro2.png'/>
                     </div>
                 </div>
             );

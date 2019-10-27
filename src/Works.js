@@ -8,7 +8,7 @@ import Card from './component/CardWorks'
 class Works extends React.Component{
 
     state={
-        width:window.innerWidth
+        width:500
     }
 
 

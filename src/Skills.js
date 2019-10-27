@@ -7,8 +7,8 @@ import Card from './component/Card'
 
 class Skills extends React.Component{
 
-    state={
-        width:window.innerWidth
+    state = {
+        width:500
     }
 
 
@@ -46,7 +46,7 @@ class Skills extends React.Component{
                 <div className="App">
                     <h2 className="main">Skill</h2>
                     <div className="item2">
-                        <Card name="Rails(Ruby)" states="Rails使えま〜す" image="h/static/images/rails_logo.png"/>
+                        <Card name="Rails(Ruby)" states="Rails使えま〜す" image="/static/images/rails_logo.png"/>
                     </div>
                     <div className="item2">
                         <Card name="React Native" states="インターンで使ってまーす" image="/static/images/react-native.png"/>

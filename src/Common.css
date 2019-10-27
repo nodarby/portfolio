@@ -27,7 +27,8 @@ h2.main{
 
 .main{
     color: rgba(255,255,255,0.97);
-    padding-bottom: 5px;
+    font-size: 20px;
+    padding-bottom: 10px;
     padding-left: 15%;
 }
 
@@ -42,4 +43,20 @@ h4{
     color: rgba(255,255,255,0.97);
     padding-bottom: 5px;
     padding-left: 15%;
+}
+
+.eng{
+    font-weight: bold;
+    display:inline;
+}
+
+.eng_line{
+    text-decoration: underline;
+    display:inline;
+}
+
+.jap{
+    font-weight: bold;
+    font-family: 'Kosugi Maru', sans-serif;
+    display:inline;
 }

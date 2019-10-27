@@ -9,7 +9,7 @@ function Contact() {
     return (
         <div className="App">
             <h2 className="main">Contact</h2>
-            <h4>メールアドレス：noda.tomohiro@h.mbox.nagoya-u.ac.jp</h4>
+            <div className="main"><div className="jap"> メールアドレス</div>：<div className="eng_line"> noda.tomohiro@h.mbox.nagoya-u.ac.jp</div></div>
         </div>
     );
 }

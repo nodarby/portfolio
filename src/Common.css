@@ -53,10 +53,20 @@ h4{
 .eng_line{
     text-decoration: underline;
     display:inline;
+    color: white;
 }
 
 .jap{
     font-weight: bold;
     font-family: 'Kosugi Maru', sans-serif;
-    display:inline;
+}
+
+.jap-in{
+    font-weight: bold;
+    font-family: 'Kosugi Maru', sans-serif;
+    display: inline;
+}
+
+.wrap{
+    padding-bottom: 30px;
 }

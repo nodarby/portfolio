@@ -19,9 +19,7 @@ const styles = {
 
 var theme = createMuiTheme({
     typography: {
-        fontSize:[
-            18,
-        ].join(','),
+        fontSize:18,
         fontFamily: [
             'Arvo',
             'sans-serif',
@@ -66,21 +64,27 @@ class TabsEx extends React.Component{
         if(this.state.width >= 600){
             theme = createMuiTheme({
                 typography: {
-                    fontSize:[
-                        18,
-                    ].join(','),
+                    fontSize:18,
                     fontFamily: [
                         'Arvo',
                         'sans-serif',
                     ].join(','),
                 },
             })
-        }else if(this.state.width >= 350){
+        }else if(this.state.width >= 400 && this.state.width < 600){
             theme = createMuiTheme({
                 typography: {
-                    fontSize:[
-                        13,
+                    fontSize:13,
+                    fontFamily: [
+                        'Arvo',
+                        'sans-serif',
                     ].join(','),
+                },
+            })
+        }else{
+            theme = createMuiTheme({
+                typography: {
+                    fontSize: 10,
                     fontFamily: [
                         'Arvo',
                         'sans-serif',

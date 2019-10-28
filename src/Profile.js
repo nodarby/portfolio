@@ -37,6 +37,12 @@ class Profile extends React.Component{
                             <div className="jap">2018年10月　　　　　OthloHack2018 最優秀賞・サイバーエージェント賞・Misoca賞</div>
                         </div>
                         <div className="main">
+                            <div className="jap">2018年10月　　　　　応用情報技術者（国家資格）　　　　　　　取得</div>
+                        </div>
+                        <div className="main">
+                            <div className="jap">2019年4月 　　　　　データベーススペシャリスト（国家資格）　取得</div>
+                        </div>
+                        <div className="main">
                             <div className="jap">2019年6月〜現在　 　スペース24コミュニケーションズ ITインターン</div>
                         </div>
                         <div className="main">

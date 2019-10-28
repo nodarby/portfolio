@@ -10,7 +10,8 @@
     "react-router": "latest",
     "react-router-dom": "latest",
     "react-scripts": "3.2.0",
-    "react-transition-group": "latest"
+    "react-transition-group": "latest",
+    "clsx": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

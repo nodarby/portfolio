@@ -28,7 +28,26 @@ class Works extends React.Component{
                     <div className="App">
                         <h2 className="main">Works</h2>
                         <div className="item">
-                           <Card name="一夜人狼"　states="著作権には引っかからない" image='/static/images/oojinro2.png'/>
+                           <Card
+                               name="一夜人狼"　
+                               image='/static/images/oojinro2.png'
+                               main="一夜限りの人狼ゲームアプリ。複数人で部屋番号を指定しゲームを始めることができる。"
+                               tec="サーバサイドとしてNode.jsを担当。"
+                               github="未公開"
+                               URL="http://oojinro.online/"
+                               URLtext="oojinro.online"
+                           />
+                        </div>
+                        <div className="item">
+                            <Card
+                                name="ポートフォリオサイト"
+                                image='/static/images/portfolio.png'
+                                main="野田朋宏のステータスを"
+                                tec="Reactを用い2日ほどで作成。/n初のフロントエンジニアリングは大変だったが非常に良い経験となった。"
+                                github="未公開"
+                                URL="https://noda-portfolio.herokuapp.com/"
+                                URLtext="oojinro.online"
+                            />
                         </div>
                     </div>
                 </Fade>
@@ -39,7 +58,15 @@ class Works extends React.Component{
                 <div className="App">
                     <h2 className="main">Works</h2>
                     <div className="item2">
-                        <Card name="一夜人狼"　states="著作権には引っかからない" image='/static/images/oojinro.png'/>
+                        <Card
+                            name="一夜人狼"
+                            image='/static/images/oojinro.png'
+                            main="一夜限りの人狼ゲームアプリ。"
+                            tec="サーバサイドとしてNode.jsを担当"
+                            github="未公開"
+                            URL="http://oojinro.online/"
+                            URLtext="oojinro.online"
+                        />
                     </div>
                 </div>
                 </Fade>

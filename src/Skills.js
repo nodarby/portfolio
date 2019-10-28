@@ -55,18 +55,18 @@ class Skills extends React.Component{
                 <div className="App">
                     <h2 className="main">Skill</h2>
                     <div className="set">
-                        <div className="item">
+                        <div className="item-skill">
                             <Card name={rails.name} states={rails.states} image={rails.image}/>
                         </div>
-                        <div className="item">
+                        <div className="item-skill">
                             <Card name={rn.name} states={rn.states} image={rn.image}/>
                         </div>
                     </div>
                     <div className="set">
-                        <div className="item">
+                        <div className="item-skill">
                             <Card name={py.name} states={py.states} image={py.image}/>
                         </div>
-                        <div className="item">
+                        <div className="item-skill">
                             <Card name={react.name} states={react.states} image={react.image}/>
                         </div>
                     </div>
@@ -78,16 +78,16 @@ class Skills extends React.Component{
                 <Fade in={this.state.visible}  timeout={3000}>
                 <div className="App">
                     <h2 className="main">Skill</h2>
-                    <div className="item2">
+                    <div className="item2-skill">
                         <Card name={rails.name} states={rails.states} image={rails.image}/>
                     </div>
-                    <div className="item2">
+                    <div className="item2-skill">
                         <Card name={rn.name} states={rn.states} image={rn.image}/>
                     </div>
-                    <div className="item2">
+                    <div className="item2-skill">
                         <Card name={py.name} states={py.states} image={py.image}/>
                     </div>
-                    <div className="item2">
+                    <div className="item2-skill">
                         <Card name={react.name} states={react.states} image={react.image}/>
                     </div>
                 </div>

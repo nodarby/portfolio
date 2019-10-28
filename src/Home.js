@@ -14,6 +14,8 @@ class Home extends React.Component{
             <Fade in={this.state.visible} timeout={3000}>
                 <div className="App">
                     <h1 className="big">Welcome</h1>
+                    <h1 className="big">to</h1>
+                    <h1 className="big">Noda's Portfolio!</h1>
                 </div>
             </Fade>
         );

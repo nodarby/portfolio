@@ -12,7 +12,7 @@ class Contact extends React.Component{
 
     render(){
         return (
-            <Fade in={this.state.visible}  timeout={3000}>
+            <Fade in={this.state.visible}  timeout={2000}>
                 <div className="App">
                     <h2 className="main">Contact</h2>
                     <div className="main">

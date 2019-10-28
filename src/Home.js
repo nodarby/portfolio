@@ -11,7 +11,7 @@ class Home extends React.Component{
 
     render(){
         return (
-            <Fade in={this.state.visible} timeout={3000}>
+            <Fade in={this.state.visible} timeout={2000}>
                 <div className="App">
                     <h1 className="big">Welcome</h1>
                     <h1 className="big">to</h1>

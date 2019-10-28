@@ -11,7 +11,7 @@ class Profile extends React.Component{
 
     render(){
         return (
-            <Fade in={this.state.visible}  timeout={3000}>
+            <Fade in={this.state.visible}  timeout={2000}>
                 <div className="App">
                     <div className="wrap">
                         <h2 className="main">Personal Information</h2>

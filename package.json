@@ -12,7 +12,7 @@
     "react-scripts": "3.2.0",
     "react-transition-group": "latest",
     "clsx": "latest",
-    "@material-ui/icons": "^4.5.1"
+    "@material-ui/ icons": "^4.5.1"
   },
   "homepage": "https://nodarby.github.io/portfolio/",
   "scripts": {

@@ -20,18 +20,10 @@ ReactDOM.render(
     <BrowserRouter>
         <TabsEx />
         <Route exact path={'/'} component={Home}/>
-            <div className="fade" id="fadeprofile">
-                    <Route path={'/profile'}  component={Profile}/>
-            </div>
-            <div className="fade" id="fadeskill">
-                    <Route path={'/skill'} component={Skills}/>
-            </div>
-            <div className="fade" id="fadeworks">
-                    <Route path={'/works'} component={Works}/>
-            </div>
-            <div className="fade" id="fadecontact">
-                    <Route path={'/contact'} component={Contact}/>
-            </div>
+        <Route path={'/profile'}  component={Profile}/>
+        <Route path={'/skill'} component={Skills}/>
+        <Route path={'/works'} component={Works}/>
+        <Route path={'/contact'} component={Contact}/>
     </BrowserRouter>
     , document.getElementById('root'));
 

@@ -56,7 +56,7 @@ class Skills extends React.Component{
     render(){
         if(this.state.width >= 850){
             return (
-                <Fade in={this.state.visible} timeout={3000}>
+                <Fade in={this.state.visible} timeout={2000}>
                 <div className="App">
                     <h2 className="main">Skill</h2>
                     <div className="set">
@@ -86,7 +86,7 @@ class Skills extends React.Component{
             );
         }else if(this.state.width >= 400){
             return (
-                <Fade in={this.state.visible}  timeout={3000}>
+                <Fade in={this.state.visible}  timeout={2000}>
                 <div className="App">
                     <h2 className="main">Skill</h2>
                     <div className="item2-skill">
@@ -106,7 +106,7 @@ class Skills extends React.Component{
             );
         }else{
             return (
-                <Fade in={this.state.visible}  timeout={3000}>
+                <Fade in={this.state.visible}  timeout={2000}>
                 <div className="App">
                     <h2 className="main">Skill</h2>
                     <div className="item3">

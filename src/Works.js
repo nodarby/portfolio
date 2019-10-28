@@ -24,7 +24,8 @@ const humiemi={
     tec:"flaskを用いてバックエンドを担当。",
     github:"https://github.com/nodarby/othlohack2018-2",
     githubText:"https://github.com/nodarby/othlohack2018-2",
-    URLtext:"未公開",
+    URL:"https://nagoyastartupnews.jp/hackathon-othlohack2018/",
+    URLtext:"OthloHack2018紹介ページ",
 }
 
 const portfolio={
@@ -112,6 +113,18 @@ class Works extends React.Component{
                             githubText={jinro.githubText}
                             URL={jinro.URL}
                             URLtext={jinro.URLtext}
+                        />
+                    </div>
+                    <div className="item2">
+                        <Card
+                            name={humiemi.name}
+                            image={humiemi.image2}
+                            main={humiemi.main}
+                            tec={humiemi.tec}
+                            github={humiemi.github}
+                            githubText={humiemi.githubText}
+                            URL={humiemi.URL}
+                            URLtext={humiemi.URLtext}
                         />
                     </div>
                     <div className="item2">

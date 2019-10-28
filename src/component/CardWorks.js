@@ -95,9 +95,7 @@ export default function MediaCard(props){
                         <Typography variant="h5"  style={{paddingBottom:10}}>github</Typography>
                     </div>
                     <Typography paragraph style={{paddingBottom:20}}>
-                        <div className="jap-center">
-                            {props.github}
-                        </div>
+                        <a className="jap-center" href={props.github} style={{paddingBottom:20}}>{props.githubText}</a>
                     </Typography>
                     <div className="jap_line">
                         <Typography variant="h5"  style={{paddingBottom:10}}>リンク</Typography>

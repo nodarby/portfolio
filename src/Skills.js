@@ -29,6 +29,11 @@ const react = {
     image:"/static/images/logo-og.png"
 }
 
+const firebase = {
+    name:"Firebase",
+    states:"Authorization,Firestoreを中心に運用経験あり",
+    image:"/static/images/firebase.png"
+}
 
 
 class Skills extends React.Component{
@@ -70,6 +75,12 @@ class Skills extends React.Component{
                             <Card name={react.name} states={react.states} image={react.image}/>
                         </div>
                     </div>
+                    <div className="set">
+                        <div className="item-skill">
+                            <Card name={firebase.name} states={firebase.states} image={firebase.image}/>
+                        </div>
+                    </div>
+
                 </div>
                 </Fade>
             );

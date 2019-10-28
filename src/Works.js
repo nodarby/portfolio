@@ -33,7 +33,7 @@ class Works extends React.Component{
                                image='/static/images/oojinro2.png'
                                main="一夜限りの人狼ゲームアプリ。複数人で部屋番号を指定しゲームを始めることができる。"
                                tec="サーバサイドとしてNode.jsを担当。"
-                               github="未公開"
+                               githubText="未公開"
                                URL="http://oojinro.online/"
                                URLtext="oojinro.online"
                            />
@@ -42,11 +42,12 @@ class Works extends React.Component{
                             <Card
                                 name="ポートフォリオサイト"
                                 image='/static/images/portfolio.png'
-                                main="野田朋宏のステータスを"
-                                tec="Reactを用い2日ほどで作成。/n初のフロントエンジニアリングは大変だったが非常に良い経験となった。"
-                                github="未公開"
+                                main="野田朋宏のステータスをまとめたサイト。"
+                                tec="Reactを用い2日ほどで作成。初のフロントエンジニアリングは大変だったが非常に良い経験となった。"
+                                github="https://github.com/nodarby/portfolio"
+                                githubText="https://github.com/nodarby/portfolio"
                                 URL="https://noda-portfolio.herokuapp.com/"
-                                URLtext="oojinro.online"
+                                URLtext="noda-portfolio.herokuapp.com"
                             />
                         </div>
                     </div>
@@ -66,6 +67,18 @@ class Works extends React.Component{
                             github="未公開"
                             URL="http://oojinro.online/"
                             URLtext="oojinro.online"
+                        />
+                    </div>
+                    <div className="item">
+                        <Card
+                            name="ポートフォリオサイト"
+                            image='/static/images/portfolio.png'
+                            main="野田朋宏のステータスをまとめたサイト。"
+                            tec="Reactを用い2日ほどで作成。初のフロントエンジニアリングは大変だったが非常に良い経験となった。"
+                            github="https://github.com/nodarby/portfolio"
+                            githubText="https://github.com/nodarby/portfolio"
+                            URL="https://noda-portfolio.herokuapp.com/"
+                            URLtext="noda-portfolio.herokuapp.com"
                         />
                     </div>
                 </div>

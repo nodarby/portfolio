@@ -24,6 +24,9 @@ class Profile extends React.Component{
                         <div className="main">
                             <div className="eng">University</div>：<div className="jap-in">名古屋大学 情報学部</div>
                         </div>
+                        <div className="main">
+                            <div className="eng">Certificate</div>：<div className="jap-in">応用情報技術者, データベーススペシャリスト</div>
+                        </div>
                     </div>
                     <div className="wrap">
                         <h2 className="main">Career</h2>
@@ -52,10 +55,10 @@ class Profile extends React.Component{
                     <div className="wrap">
                         <h2 className="main">Hobby</h2>
                         <div className="main">
-                            <div className="jap">ディズニーリゾートに行く（名古屋から行くと交通費がかさむ）</div>
+                            <div className="jap">・ディズニーリゾートに行く（名古屋から行くと交通費がかさむ）</div>
                         </div>
                         <div className="main">
-                            <div className="jap">ボードゲーム（戦略性とか心理的駆け引きがあるとなお良し）</div>
+                            <div className="jap">・ボードゲーム（戦略性とか心理的駆け引きがあるとなお良し）</div>
                         </div>
                     </div>
                 </div>

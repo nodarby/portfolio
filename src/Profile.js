@@ -37,10 +37,10 @@ class Profile extends React.Component{
                             <div className="jap">2017年4月 　　　　　名古屋大学　情報学部コンピュータ科学科入学</div>
                         </div>
                         <div className="main">
-                            <div className="jap">2018年10月　　　　　OthloHack2018 最優秀賞・サイバーエージェント賞・Misoca賞</div>
+                            <div className="jap">2018年10月　　　　　応用情報技術者（国家資格）　　　　　　　取得</div>
                         </div>
                         <div className="main">
-                            <div className="jap">2018年10月　　　　　応用情報技術者（国家資格）　　　　　　　取得</div>
+                            <div className="jap">2018年11月　　　　　OthloHack2018 最優秀賞・サイバーエージェント賞・Misoca賞</div>
                         </div>
                         <div className="main">
                             <div className="jap">2019年4月 　　　　　データベーススペシャリスト（国家資格）　取得</div>

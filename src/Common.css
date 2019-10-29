@@ -19,6 +19,7 @@ h2.main{
      color: #000000;
      font-size: 35px;
      padding-left: 8%;
+    padding-bottom: 20px;
      text-shadow:2px 2px 0 #FFF, -2px -2px 0 #FFF,
      -2px 2px 0 #FFF, 2px -2px 0 #FFF,
      0px 2px 0 #FFF,  0-2px 0 #FFF,
@@ -88,7 +89,5 @@ h4{
 
 
 .wrap{
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
-
-

@@ -1,8 +1,7 @@
 import React from 'react';
 import './Common.css';
 import {Fade} from "@material-ui/core";
-
-
+import './styles.css'
 
 
 class Contact extends React.Component{
@@ -12,8 +11,10 @@ class Contact extends React.Component{
 
     render(){
         return (
+            <>
             <Fade in={this.state.visible}  timeout={2000}>
                 <div className="App">
+                    <div className="wrap">
                     <h2 className="main">Contact</h2>
                     <div className="main">
                         <div className="jap-in"> メールアドレス</div>：<div className="eng"> noda.tomohiro@h.mbox.nagoya-u.ac.jp</div>
@@ -21,8 +22,10 @@ class Contact extends React.Component{
                     <div className="main">
                         <div className="jap-in"> github</div>　　　　：<a className="eng_line" href={"https://github.com/nodarby"}>https://github.com/nodarby</a>
                     </div>
+                    </div>
                 </div>
             </Fade>
+            </>
         );
     }
 }

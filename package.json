@@ -4,15 +4,17 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.5.1",
+    "@material-ui/icons": "^4.5.1",
+    "clsx": "latest",
     "material-ui": "^0.20.2",
     "react": "^16.0.0-rc.3",
     "react-dom": "^16.0.0-rc.3",
     "react-router": "latest",
     "react-router-dom": "latest",
     "react-scripts": "3.2.0",
+    "react-spring": "^8.0.27",
     "react-transition-group": "latest",
-    "clsx": "latest",
-    "@material-ui/icons": "^4.5.1"
+    "react-use-gesture": "^6.0.14"
   },
   "homepage": "https://nodarby.github.io/portfolio/",
   "scripts": {

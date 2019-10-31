@@ -53,11 +53,9 @@ export default function MediaCard(props){
                 />
             </CardContent>
             <CardContent>
-                <Typography paragraph>
                     <div className="jap-big">
                         {props.name}
                     </div>
-                </Typography>
                 <div className="button">
                 <IconButton
                     size="medium"

@@ -30,7 +30,8 @@ h2.main{
     color: rgba(255,255,255,0.97);
     font-size: 20px;
     padding-bottom: 10px;
-    padding-left: 15%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h3{
@@ -87,9 +88,19 @@ h4{
     display: inline;
 }
 
+.jap-m{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Kosugi Maru', sans-serif;
+}
 
-.wrap{
-    padding-bottom: 40px;
+.wrap-ss{
+    padding-bottom: 5px;
+}
+
+
+.wrap-s{
+    padding-bottom: 10px;
 }
 
 

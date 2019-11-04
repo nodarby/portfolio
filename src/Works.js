@@ -69,6 +69,7 @@ class Works extends React.Component{
                                image={jinro.image}
                                main={jinro.main}
                                tec={jinro.tec}
+                               github={jinro.github}
                                githubText={jinro.githubText}
                                URL={jinro.URL}
                                URLtext={jinro.URLtext}

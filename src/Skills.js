@@ -4,39 +4,50 @@ import './Skills.css'
 import Card from './component/Card'
 import {Fade} from "@material-ui/core";
 
-
 const rails={
     name:"Rails(Ruby)",
-    states:"サーバサイド言語として、teamLabサマーインターン2019で使用。",
-    image:"/static/images/rails_logo.png"
+    states:"サーバサイドとして、teamLabサマーインターン2019で使用。",
+    image:"/static/images/rails_logo.png",
+    image2:"/static/images/rails_maru.png"
 }
 
 const rn ={
     name:"React Native",
-    states:"スペース２４コミニュケーションズのITインターン生としてアプリを作成中",
+    states:"スペース２４コミニュケーションズのITインターン生としてアプリを作成中。",
     image:"/static/images/react-native.png"
 }
 
 const py = {
     name:"Python",
-    states:"1年次より講義内で数値解析や機械学習等に利用。",
-    image:"/static/images/Python.png"
+    states:"学部1年次に習得。講義内で数値解析や機械学習等に利用。",
+    image:"/static/images/Python.png",
+    image2:"/static/images/ac.png"
 }
 
 const react = {
     name:"React",
-    states:"React Nativeでの経験を元に運用を開始。このポートフォリオサイトもReactを用いた。",
-    image:"/static/images/logo-og.png"
+    states:"React Nativeでの経験を元に利用を開始。このポートフォリオサイトもReactを用いた。",
+    image:"/static/images/react-dev-tools-logo.jpg",
+    image2:"/static/images/react.png"
+}
+
+const node = {
+    name:"Node.js",
+    states:"",
+    image:"/static/images/nodejs-1.png",
+    image2:"/static/images/nodemaru.png"
 }
 
 const firebase = {
     name:"Firebase",
-    states:"Authorization,Firestoreを中心に運用経験あり",
-    image:"/static/images/firebase.png"
+    states:"Authorization, CloudFunctions, Firestoreを中心に利用経験あり。",
+    image:"/static/images/firebase.png",
+    image2:"/static/images/f1.png"
 }
 
 
 class Skills extends React.Component{
+
 
     state = {
         visible:window.skill,
@@ -54,7 +65,7 @@ class Skills extends React.Component{
 
 
     render(){
-        if(this.state.width >= 850){
+        if(this.state.width >= 900){
             return (
                 <Fade in={this.state.visible} timeout={2000}>
                 <div className="App">
@@ -66,16 +77,17 @@ class Skills extends React.Component{
                         <div className="item-skill">
                             <Card name={rn.name} states={rn.states} image={rn.image}/>
                         </div>
-                    </div>
-                    <div className="set">
                         <div className="item-skill">
                             <Card name={py.name} states={py.states} image={py.image}/>
                         </div>
+                    </div>
+                    <div className="set">
                         <div className="item-skill">
                             <Card name={react.name} states={react.states} image={react.image}/>
                         </div>
-                    </div>
-                    <div className="set">
+                        <div className="item-skill">
+                            <Card name={node.name} states={node.states} image={node.image}/>
+                        </div>
                         <div className="item-skill">
                             <Card name={firebase.name} states={firebase.states} image={firebase.image}/>
                         </div>
@@ -84,23 +96,36 @@ class Skills extends React.Component{
                 </div>
                 </Fade>
             );
-        }else if(this.state.width >= 400){
+        }else if(this.state.width >= 550 && this.state.width<900){
             return (
                 <Fade in={this.state.visible}  timeout={2000}>
                 <div className="App">
                     <h2 className="main">Skill</h2>
-                    <div className="item2-skill">
-                        <Card name={rails.name} states={rails.states} image={rails.image}/>
+                    <div className="set2">
+                        <div className="item2-skill">
+                            <Card name={rails.name} states={rails.states} image={rails.image}/>
+                        </div>
+                        <div className="item2-skill">
+                            <Card name={rn.name} states={rn.states} image={rn.image}/>
+                        </div>
                     </div>
-                    <div className="item2-skill">
-                        <Card name={rn.name} states={rn.states} image={rn.image}/>
+                    <div className="set2">
+                        <div className="item2-skill">
+                            <Card name={py.name} states={py.states} image={py.image}/>
+                        </div>
+                        <div className="item2-skill">
+                            <Card name={react.name} states={react.states} image={react.image}/>
+                        </div>
                     </div>
-                    <div className="item2-skill">
-                        <Card name={py.name} states={py.states} image={py.image}/>
+                    <div className="set2">
+                        <div className="item2-skill">
+                            <Card name={node.name} states={node.states} image={node.image}/>
+                        </div>
+                        <div className="item2-skill">
+                            <Card name={firebase.name} states={firebase.states} image={firebase.image}/>
+                        </div>
                     </div>
-                    <div className="item2-skill">
-                        <Card name={react.name} states={react.states} image={react.image}/>
-                    </div>
+
                 </div>
                 </Fade>
             );
@@ -110,16 +135,22 @@ class Skills extends React.Component{
                 <div className="App">
                     <h2 className="main">Skill</h2>
                     <div className="item3">
-                        <Card name={rails.name} states={rails.states} image={rails.image}/>
+                        <Card name={rails.name} states={rails.states} image={rails.image2}/>
                     </div>
                     <div className="item3">
                         <Card name={rn.name} states={rn.states} image={rn.image}/>
                     </div>
                     <div className="item3">
-                        <Card name={py.name} states={py.states} image={py.image}/>
+                        <Card name={py.name} states={py.states} image={py.image2}/>
                     </div>
                     <div className="item3">
-                        <Card name={react.name} states={react.states} image={react.image}/>
+                        <Card name={react.name} states={react.states} image={react.image2}/>
+                    </div>
+                    <div className="item3">
+                        <Card name={node.name} states={node.states} image={node.image2}/>
+                    </div>
+                    <div className="item3">
+                        <Card name={firebase.name} states={firebase.states} image={firebase.image2}/>
                     </div>
                 </div>
                 </Fade>

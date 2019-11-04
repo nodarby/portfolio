@@ -2,7 +2,6 @@ import React from 'react';
 import './Common.css';
 import {Fade} from "@material-ui/core";
 import { useSpring, animated } from 'react-spring'
-import range from 'lodash-es/range'
 import './styles.css'
 
 const interp = i => r => `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`

@@ -11,7 +11,8 @@ const jinro={
     image2:'/static/images/oojinro.png',
     main:"一夜限りの人狼ゲームアプリ。複数人で部屋番号を指定しゲームを始めることができる。",
     tec:"Node.jsを用いてバックエンドを担当。WebSocketを用いた実装で、通信が安定している",
-    githubText:"未公開",
+    github:"https://github.com/nodarby/oojinro",
+    githubText:"https://github.com/nodarby/oojinro",
     URL:"http://oojinro.online/",
     URLtext:"oojinro.online",
 }
